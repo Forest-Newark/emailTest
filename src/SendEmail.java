@@ -58,7 +58,7 @@ public class SendEmail {
 
             // Now set the actual message
             System.out.println("Enter Email Body: ");
-            message.setText(sc.nextLine());
+            message.setText(messageBuilder.buildMessage());
 
             // Send message
             Transport.send(message);
